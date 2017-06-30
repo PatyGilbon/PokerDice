@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="acetitle.png">
+  <title>Poker Dice</title>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Poker Dice</h1>
+  </nav>
+  <main class="board">
+    <section class="cubilete-dices" >
+      <!-- Aqui dibujo el resultado -->
+      <div class="dice start"></div>
+      <div class="dice start"></div>
+      <div class="dice start"></div>
+      <div class="dice start"></div>
+      <div class="dice start"></div>
+    </section>
+    <section class="cubilete-dices-player2">
+      <!-- Aqui dibujo el resultado -->
+      <div class="dice2 start"></div>
+      <div class="dice2 start"></div>
+      <div class="dice2 start"></div>
+      <div class="dice2 start"></div>
+      <div class="dice2 start"></div>
+    </section>
+   <section class="score panel">
+     <h2> Results </h2>
+     <ul>
+       <li>Player 1</li>
+       <label id="score"  style="display:none"></label>
+       <label id="score3"  style="display:none"></label>
+       <label id="score1"  style="display:none"></label>
+       <li>Player 2</li>
+       <label id="score2" style="display:none"></label>
+       <label id="score4" style="display:none"></label>
+     </ul>
+   </section>
+   <section class="button">
+     <button id="instructions"  class="btn">Instructions</button>
+        <p id="information" style="display:none">
+          The classic poker dice game is played with 5 dice.
+          Each player has a total of 3 rolls and the ability to hold dice in between rolls.
+          After the three rolls the best hand wins. Good luck!
+        </p>
+      </label>
+   </section>
+    <section class="buttons">
+      <button id="first-game" class="btn">Player 1</button>
+      <button id="throw"  class="btn">Throw Dice</button>
+    </section>
+    <section class="buttons2">
+      <button id="second-game" class="btn">Player 2</button>
+      <button id="throw2"  class="btn">Throw Dice</button>
+    </section>
+    <section class="buttonn">
+      <button id="test" class="btn">Play</button>
+    </section>
+    <section id="winner" style="display:none">
+      <h3> And the winner is... </h3>
+      <label id="finalWinner"></label>
+    </section>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
